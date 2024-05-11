@@ -47,3 +47,17 @@ streamlit run Home.py
 * Unable to install the `av` package with `pip`? Try executing `conda install av -c conda-forge` in your Terminal
 
 -- Note: [Anaconda](https://www.anaconda.com/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) is required for this method. Be sure that `conda-forge` has been made available in your channels. https://conda-forge.org/docs/user/introduction.html#how-can-i-install-packages-from-conda-forge
+
+## Acknowledgements
+
+This project utilizes modified code from the [Roboflow Streamlit Computer Vision App for Web Browser Deployment](https://github.com/roboflow/streamlit-web-app), originally developed by Roboflow. The code is used under the Apache 2.0 License, which permits use, modification, and distribution.
+
+### Modifications
+The code has been adapted to enhance functionality and tailor the user experience to specific requirements of this Master's thesis project.
+
+### License
+This project is provided under the Apache License 2.0. A copy of the license is available in the LICENSE file of this repository.
+
+### Original Source
+You can find the original and unmodified code at:
+[Roboflow Streamlit Web App GitHub Repository](https://github.com/roboflow/streamlit-web-app)
