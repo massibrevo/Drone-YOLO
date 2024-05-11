@@ -1,8 +1,7 @@
-<h1 align="center">Search and Rescue Computer Vision App</h1>
-<h2 align="center">A web-based application for deploying a drone-based YOLO model to enhance search and rescue operations.</h2>
+<h1 align="center"> Drone-YOLO: an efficient AI method for the detection of missing people in forest remote areas</h1>
 
 <br></br>
-[![Streamlit](https://badges.aleen42.com/src/streamlit.svg)](https://streamlit.io/)
+[![Roboflow](https://raw.githubusercontent.com/roboflow-ai/notebooks/main/assets/badges/roboflow-blogpost.svg)](https://blog.roboflow.com/)
 [![Python](https://badges.aleen42.com/src/python.svg)](https://python.org)
 
 ## 🎬 Overview
@@ -12,22 +11,39 @@ This application is developed as part of a Master's thesis in Computational Engi
 ## How it Works:
 I've created this Streamlit app that allows users to upload aerial images and uses a trained YOLOv8 model to detect and localize missing individuals in forested or challenging terrains.
 
-## 💻 Run Locally
-Follow these steps to get the application running on your local machine:
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/your-repository.git
-
-# Navigate to the root directory
-cd your-repository/streamlit
-
-# Set up your Python environment
+## 💻 run locally
+Complete these steps with your console/terminal
+```
+# clone the repository
+git clone https://github.com/roboflow/streamlit-web-app.git
+```
+```
+# navigate to the root directory
+cd streamlit-web-app
+cd streamlit
+```
+```
+# set up your python environment and activate it
 python3 -m venv venv
 source venv/bin/activate
-
-# Install the requirements
+```
+```
+# install the requirements
 pip install -r requirements.txt
-
-# Run the app
+```
+```
+# run the app
 streamlit run Home.py
+```
+
+### Troubleshooting:
+* For Mac users: be sure that you have [Homebrew](https://brew.sh/) installed.
+* Unable to resolve wheel for `av` or `aiortc` packages: Install `pkg-config` by executing `brew install pkg-config` in your Terminal
+* If you wish to process video streams with Streamlit apps, be sure to also have `ffmpeg` installed: after installing Homebrew, execute `brew install ffmpeg` in your Terminal
+
+-- Check here for more on `ffmpeg` installation: https://github.com/roboflow/video-inference#requirements
+* Ensure that you have `opencv-python-headless` installed in your environment, instead of `opencv-python`
+
+* Unable to install the `av` package with `pip`? Try executing `conda install av -c conda-forge` in your Terminal
+
+-- Note: [Anaconda](https://www.anaconda.com/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) is required for this method. Be sure that `conda-forge` has been made available in your channels. https://conda-forge.org/docs/user/introduction.html#how-can-i-install-packages-from-conda-forge
