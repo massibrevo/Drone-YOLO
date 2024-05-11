@@ -15,7 +15,7 @@ I've created this Streamlit app that allows users to upload aerial images and us
 Complete these steps with your console/terminal
 ```
 # clone the repository
-git clone https://github.com/roboflow/streamlit-web-app.git
+git clone https://github.com/massibrevo/Drone-YOLO.git
 ```
 ```
 # navigate to the root directory
